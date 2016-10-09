@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAD253F81DAA728400D52DFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD253F71DAA728400D52DFE /* AppDelegate.swift */; };
+		CAD253FA1DAA728400D52DFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD253F91DAA728400D52DFE /* ViewController.swift */; };
+		CAD253FD1DAA728400D52DFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD253FB1DAA728400D52DFE /* Main.storyboard */; };
+		CAD253FF1DAA728400D52DFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD253FE1DAA728400D52DFE /* Assets.xcassets */; };
+		CAD254021DAA728400D52DFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD254001DAA728400D52DFE /* LaunchScreen.storyboard */; };
+		CAD2540D1DAA728400D52DFE /* ZENotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD2540C1DAA728400D52DFE /* ZENotationTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAD254091DAA728400D52DFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAD253EC1DAA728400D52DFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAD253F31DAA728400D52DFE;
+			remoteInfo = ZENotation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CAD253F41DAA728400D52DFE /* ZENotation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZENotation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD253F71DAA728400D52DFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CAD253F91DAA728400D52DFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAD253FC1DAA728400D52DFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAD253FE1DAA728400D52DFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAD254011DAA728400D52DFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CAD254031DAA728400D52DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAD254081DAA728400D52DFE /* ZENotationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZENotationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD2540C1DAA728400D52DFE /* ZENotationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZENotationTests.swift; sourceTree = "<group>"; };
+		CAD2540E1DAA728400D52DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAD253F11DAA728400D52DFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD254051DAA728400D52DFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAD253EB1DAA728400D52DFE = {
+			isa = PBXGroup;
+			children = (
+				CAD253F61DAA728400D52DFE /* ZENotation */,
+				CAD2540B1DAA728400D52DFE /* ZENotationTests */,
+				CAD253F51DAA728400D52DFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAD253F51DAA728400D52DFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAD253F41DAA728400D52DFE /* ZENotation.app */,
+				CAD254081DAA728400D52DFE /* ZENotationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAD253F61DAA728400D52DFE /* ZENotation */ = {
+			isa = PBXGroup;
+			children = (
+				CAD253F71DAA728400D52DFE /* AppDelegate.swift */,
+				CAD253F91DAA728400D52DFE /* ViewController.swift */,
+				CAD253FB1DAA728400D52DFE /* Main.storyboard */,
+				CAD253FE1DAA728400D52DFE /* Assets.xcassets */,
+				CAD254001DAA728400D52DFE /* LaunchScreen.storyboard */,
+				CAD254031DAA728400D52DFE /* Info.plist */,
+			);
+			path = ZENotation;
+			sourceTree = "<group>";
+		};
+		CAD2540B1DAA728400D52DFE /* ZENotationTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAD2540C1DAA728400D52DFE /* ZENotationTests.swift */,
+				CAD2540E1DAA728400D52DFE /* Info.plist */,
+			);
+			path = ZENotationTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAD253F31DAA728400D52DFE /* ZENotation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAD254111DAA728400D52DFE /* Build configuration list for PBXNativeTarget "ZENotation" */;
+			buildPhases = (
+				CAD253F01DAA728400D52DFE /* Sources */,
+				CAD253F11DAA728400D52DFE /* Frameworks */,
+				CAD253F21DAA728400D52DFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZENotation;
+			productName = ZENotation;
+			productReference = CAD253F41DAA728400D52DFE /* ZENotation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAD254071DAA728400D52DFE /* ZENotationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAD254141DAA728400D52DFE /* Build configuration list for PBXNativeTarget "ZENotationTests" */;
+			buildPhases = (
+				CAD254041DAA728400D52DFE /* Sources */,
+				CAD254051DAA728400D52DFE /* Frameworks */,
+				CAD254061DAA728400D52DFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAD2540A1DAA728400D52DFE /* PBXTargetDependency */,
+			);
+			name = ZENotationTests;
+			productName = ZENotationTests;
+			productReference = CAD254081DAA728400D52DFE /* ZENotationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAD253EC1DAA728400D52DFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Ratsimihah;
+				TargetAttributes = {
+					CAD253F31DAA728400D52DFE = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = KA538K5SG2;
+						ProvisioningStyle = Automatic;
+					};
+					CAD254071DAA728400D52DFE = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = KA538K5SG2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CAD253F31DAA728400D52DFE;
+					};
+				};
+			};
+			buildConfigurationList = CAD253EF1DAA728400D52DFE /* Build configuration list for PBXProject "ZENotation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAD253EB1DAA728400D52DFE;
+			productRefGroup = CAD253F51DAA728400D52DFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAD253F31DAA728400D52DFE /* ZENotation */,
+				CAD254071DAA728400D52DFE /* ZENotationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAD253F21DAA728400D52DFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD254021DAA728400D52DFE /* LaunchScreen.storyboard in Resources */,
+				CAD253FF1DAA728400D52DFE /* Assets.xcassets in Resources */,
+				CAD253FD1DAA728400D52DFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD254061DAA728400D52DFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAD253F01DAA728400D52DFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD253FA1DAA728400D52DFE /* ViewController.swift in Sources */,
+				CAD253F81DAA728400D52DFE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD254041DAA728400D52DFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD2540D1DAA728400D52DFE /* ZENotationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAD2540A1DAA728400D52DFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAD253F31DAA728400D52DFE /* ZENotation */;
+			targetProxy = CAD254091DAA728400D52DFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CAD253FB1DAA728400D52DFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAD253FC1DAA728400D52DFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAD254001DAA728400D52DFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAD254011DAA728400D52DFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAD2540F1DAA728400D52DFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAD254101DAA728400D52DFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAD254121DAA728400D52DFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KA538K5SG2;
+				INFOPLIST_FILE = ZENotation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ratsimihah.ZENotation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CAD254131DAA728400D52DFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KA538K5SG2;
+				INFOPLIST_FILE = ZENotation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ratsimihah.ZENotation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CAD254151DAA728400D52DFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = KA538K5SG2;
+				INFOPLIST_FILE = ZENotationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ratsimihah.ZENotationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZENotation.app/ZENotation";
+			};
+			name = Debug;
+		};
+		CAD254161DAA728400D52DFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = KA538K5SG2;
+				INFOPLIST_FILE = ZENotationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ratsimihah.ZENotationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZENotation.app/ZENotation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAD253EF1DAA728400D52DFE /* Build configuration list for PBXProject "ZENotation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD2540F1DAA728400D52DFE /* Debug */,
+				CAD254101DAA728400D52DFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAD254111DAA728400D52DFE /* Build configuration list for PBXNativeTarget "ZENotation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD254121DAA728400D52DFE /* Debug */,
+				CAD254131DAA728400D52DFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CAD254141DAA728400D52DFE /* Build configuration list for PBXNativeTarget "ZENotationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD254151DAA728400D52DFE /* Debug */,
+				CAD254161DAA728400D52DFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAD253EC1DAA728400D52DFE /* Project object */;
+}

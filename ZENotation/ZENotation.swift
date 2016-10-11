@@ -11,37 +11,51 @@ import MapKit
 
 let clusterSize = 3
 
-extension Array where Element : ZENotation {
+/** TODO: Figure out Array<Element> issue
+extension Array where Element : MKAnnotation {
     // Extension method on generic type
     // Import ZENotation to have access to the array method
     // TODO: Improve collapsing heuristics
-    func collapseAnnotations() -> ZENotation {
-        if let first = self.first {
-            return first
-        }
-        return ZENotation()
+    func collapseAnnotations(annotations: [ZENotation]) -> ZENotation {
+        // * coordinate: let's start by taking the coordinates of the first point
+        //     we can then use more accurate triangulation heuristics
+        // * annotations: the sub-annotations
+        // * info: nil (only Single annotations have info)
+        print("Collapsing annotations \(annotations)")
+        let collapsedAnnotation = ZENotation()
+        collapsedAnnotation.coordinate = (annotations.first?.coordinate)!
+        collapsedAnnotation.annotations = annotations
+        return collapsedAnnotation
     }
 
     func collapseAllAnnotations() -> [ZENotation] {
-        // Sort annotations by ln first
-        let sortedAnnotations = self.sorted {
+        // TODO: Create a custom Collection to enable sorting and slicings
+        print("Collapsing: \(self)")
+        // Collapse sorted annotations linearly
+        var resultArray:[ZENotation] = []
+        let annotations = self as Array<ZENotation>
+        let collapsedAnnotation = collapseAnnotations(annotations: self)
+        return resultArray
+    }
+
+    func sortAnnotations() -> [Element] {
+        return self.sorted {
             (annotation1, annotation2) -> Bool in
-                let mapPointCoordinates1 = MKMapPointForCoordinate(annotation1.coordinate)
-                let mapPointCoordinates2 = MKMapPointForCoordinate(annotation2.coordinate)
-                return
-                    (mapPointCoordinates1.x < mapPointCoordinates2.x) &&
+            let mapPointCoordinates1 = MKMapPointForCoordinate(annotation1.coordinate)
+            let mapPointCoordinates2 = MKMapPointForCoordinate(annotation2.coordinate)
+            return
+                (mapPointCoordinates1.x < mapPointCoordinates2.x) &&
                     (mapPointCoordinates1.y < mapPointCoordinates2.y)
         }
-        // Collapse sorted annotations linearly
-        return [ZENotation.init()]
     }
 }
+ */
 
 class ZENotation: NSObject, MKAnnotation {
 
     var coordinate: CLLocationCoordinate2D
     // Internal annotation array to handle annotations aggregation
-    private var annotations: [ZENotation]?
+    var annotations: [ZENotation]?
     var info: [String: String]?
 
     override init() {

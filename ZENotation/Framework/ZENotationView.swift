@@ -9,14 +9,39 @@
 import UIKit
 import MapKit
 
+enum ZENotationViewType {
+    case Aggregated
+    case Single
+}
+
 class ZENotationView: MKAnnotationView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+    var imageView:UIImageView?
+    var titleLabel:UILabel?
+    var type:ZENotationViewType?
 
+    override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
+        super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
+    override func draw(_ rect: CGRect) {
+        switch self.type! {
+        case .Aggregated:
+            self.setUpAggregatedView()
+        case .Single:
+            self.setUpSingleView()
+        }
+    }
+
+    private func setUpAggregatedView() {
+
+    }
+
+    private func setUpSingleView() {
+
+    }
 }

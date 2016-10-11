@@ -21,6 +21,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
 
     var mapView:MKMapView?
 
+    // MARK: - ViewController Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -33,6 +35,8 @@ class ViewController: UIViewController, MKMapViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    // MARK: - UI + Map Logic
 
     func setUpMapView() {
         self.mapView = MKMapView(frame: self.view.frame)
@@ -49,26 +53,44 @@ class ViewController: UIViewController, MKMapViewDelegate {
     func setUpDemoAnnotations() {
         // Generate array of random coordinates within a given
         // region to demonstrate the aggregation
-        let coordinates:[CLLocationCoordinate2D] = []
-        let notations = ZENotations.init(coordinates:coordinates)
+//        let coordinates:[CLLocationCoordinate2D] = []
+//        let notations = ZENotations.init(coordinates:coordinates)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = testLocation
+        self.mapView?.addAnnotation(annotation)
     }
 
+    // MARK: - MapViewDelegate
+
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        var otherAnnotationView:ZENotationView?
-        let dequeuedAnnotationView:ZENotationView? = mapView.dequeueReusableAnnotationView(withIdentifier:
-            annotationOtherLocationReuseIdentifier) as! ZENotationView?
-        if let view = dequeuedAnnotationView {
-            otherAnnotationView = view
-            print("Dequeued an annotation view!")
-        } else {
-            print("Couldn't dequeue an annotation view, creating a new one!")
-            otherAnnotationView = ZENotationView(annotation: annotation,
-                                                 reuseIdentifier: annotationOtherLocationReuseIdentifier)
-        }
-        let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        titleLabel.text = "HEY"
-        otherAnnotationView?.leftCalloutAccessoryView?.addSubview(titleLabel)
-        return otherAnnotationView
+        // TODO: Optimize aggregations on adds
+        // Do we want to reaggregate all annotations everytime we add new ones?
+        // Is there a way to progressively reorganize annotations as we add new ones
+        print("mapView: MKMapView, viewFor annotation: MKAnnotation")
+        return ZENotationView()
     }
+
+    func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
+        // Might be more appropriate than `mapViewDidFinishRenderingMap`to initially structure annotations
+        print("mapViewDidFinishLoadingMap(): Aggregating annotations.")
+        let annotations = mapView.annotations as! [ZENotation]
+        let aggregatedAnnotations = annotations.collapseAllAnnotations()
+        mapView.removeAnnotations(annotations)
+        mapView.addAnnotations(aggregatedAnnotations)
+    }
+
+    func mapViewDidFinishRenderingMap(_ mapView: MKMapView, fullyRendered: Bool) {
+        print("mapViewDidFinishRenderingMap")
+    }
+
+    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        print("mapViewRegionDidChangeAnimated(): Reaggregating annotations.")
+    }
+
+    func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView]) {
+        print("mapView: MKMapView, didAdd views: [MKAnnotationView]")
+    }
+
+
 }
 

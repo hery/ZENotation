@@ -10,6 +10,7 @@
 		CA3E04161DAC0729006AD312 /* ZENotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E04151DAC0729006AD312 /* ZENotationView.swift */; };
 		CA3E04181DAC0739006AD312 /* ZENotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E04171DAC0739006AD312 /* ZENotation.swift */; };
 		CA3E041C1DAC0774006AD312 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD254181DAA779A00D52DFE /* MapKit.framework */; };
+		CA422BA31DAE7E2500D7E085 /* MKMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA422BA21DAE7E2500D7E085 /* MKMapViewExtension.swift */; };
 		CAD253F81DAA728400D52DFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD253F71DAA728400D52DFE /* AppDelegate.swift */; };
 		CAD253FA1DAA728400D52DFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD253F91DAA728400D52DFE /* ViewController.swift */; };
 		CAD253FD1DAA728400D52DFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD253FB1DAA728400D52DFE /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		CA3E04151DAC0729006AD312 /* ZENotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZENotationView.swift; path = Framework/ZENotationView.swift; sourceTree = "<group>"; };
 		CA3E04171DAC0739006AD312 /* ZENotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZENotation.swift; sourceTree = "<group>"; };
+		CA422BA21DAE7E2500D7E085 /* MKMapViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKMapViewExtension.swift; sourceTree = "<group>"; };
 		CAD253F41DAA728400D52DFE /* ZENotation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZENotation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD253F71DAA728400D52DFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAD253F91DAA728400D52DFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			children = (
 				CA3E04151DAC0729006AD312 /* ZENotationView.swift */,
 				CA3E04171DAC0739006AD312 /* ZENotation.swift */,
+				CA422BA21DAE7E2500D7E085 /* MKMapViewExtension.swift */,
 			);
 			name = framework;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA422BA31DAE7E2500D7E085 /* MKMapViewExtension.swift in Sources */,
 				CAD253FA1DAA728400D52DFE /* ViewController.swift in Sources */,
 				CAD253F81DAA728400D52DFE /* AppDelegate.swift in Sources */,
 				CA3E04181DAC0739006AD312 /* ZENotation.swift in Sources */,

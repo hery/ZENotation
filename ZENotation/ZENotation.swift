@@ -57,6 +57,7 @@ class ZENotation: NSObject, MKAnnotation {
     // Internal annotation array to handle annotations aggregation
     var annotations: [ZENotation]?
     var info: [String: String]?
+    var title: String?
 
     override init() {
         self.coordinate = CLLocationCoordinate2D()

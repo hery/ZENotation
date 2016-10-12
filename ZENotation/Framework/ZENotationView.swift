@@ -19,14 +19,14 @@ class ZENotationView: MKAnnotationView {
     var imageView:UIImageView?
     var titleLabel:UILabel?
     var type:ZENotationViewType?
-
-    override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
-        super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
+//
+//    override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
+//        super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
+//    }
+//
+//    required init?(coder aDecoder: NSCoder) {
+//        super.init(coder: aDecoder)
+//    }
 
     override func draw(_ rect: CGRect) {
         switch self.type! {
@@ -38,10 +38,16 @@ class ZENotationView: MKAnnotationView {
     }
 
     private func setUpAggregatedView() {
-
+        /**
+         Set up a an aggregated view showing the images of every sub-annotations.
+         One of the sub-annotation will show, e.g. "6+" annotations if there are
+         more than 6 annotations.
+         */
     }
 
     private func setUpSingleView() {
-
+        /**
+         Set up a single annotation showing an image or a title
+         */
     }
 }

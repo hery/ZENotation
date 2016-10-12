@@ -28,4 +28,6 @@ For now clone the project and import the files in the `Framework` group into you
 Carthage compatibility is on the way.
 
 ## Screenshots
-   
+
+![simulator screen shot oct 12 2016 5 33 22 pm](https://cloud.githubusercontent.com/assets/910954/19319141/d9bbd4b2-90ab-11e6-9657-67760abf05e7.png) ![simulator screen shot oct 12 2016 5 33 23 pm](https://cloud.githubusercontent.com/assets/910954/19319142/d9bdf53a-90ab-11e6-8ded-a62290c8e266.png)
+

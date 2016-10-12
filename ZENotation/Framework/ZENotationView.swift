@@ -19,14 +19,6 @@ class ZENotationView: MKAnnotationView {
     var imageView:UIImageView?
     var titleLabel:UILabel?
     var type:ZENotationViewType?
-//
-//    override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
-//        super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
-//    }
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//    }
 
     override func draw(_ rect: CGRect) {
         switch self.type! {

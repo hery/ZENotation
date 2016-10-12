@@ -11,12 +11,12 @@
 		CA3E04181DAC0739006AD312 /* ZENotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E04171DAC0739006AD312 /* ZENotation.swift */; };
 		CA3E041C1DAC0774006AD312 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD254181DAA779A00D52DFE /* MapKit.framework */; };
 		CA422BA31DAE7E2500D7E085 /* MKMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA422BA21DAE7E2500D7E085 /* MKMapViewExtension.swift */; };
+		CA422BA51DAE872500D7E085 /* MKMapViewExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA422BA41DAE872500D7E085 /* MKMapViewExtensionTests.swift */; };
 		CAD253F81DAA728400D52DFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD253F71DAA728400D52DFE /* AppDelegate.swift */; };
 		CAD253FA1DAA728400D52DFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD253F91DAA728400D52DFE /* ViewController.swift */; };
 		CAD253FD1DAA728400D52DFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD253FB1DAA728400D52DFE /* Main.storyboard */; };
 		CAD253FF1DAA728400D52DFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD253FE1DAA728400D52DFE /* Assets.xcassets */; };
 		CAD254021DAA728400D52DFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD254001DAA728400D52DFE /* LaunchScreen.storyboard */; };
-		CAD2540D1DAA728400D52DFE /* ZENotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD2540C1DAA728400D52DFE /* ZENotationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +33,7 @@
 		CA3E04151DAC0729006AD312 /* ZENotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZENotationView.swift; path = Framework/ZENotationView.swift; sourceTree = "<group>"; };
 		CA3E04171DAC0739006AD312 /* ZENotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZENotation.swift; sourceTree = "<group>"; };
 		CA422BA21DAE7E2500D7E085 /* MKMapViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKMapViewExtension.swift; sourceTree = "<group>"; };
+		CA422BA41DAE872500D7E085 /* MKMapViewExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKMapViewExtensionTests.swift; sourceTree = "<group>"; };
 		CAD253F41DAA728400D52DFE /* ZENotation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZENotation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD253F71DAA728400D52DFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAD253F91DAA728400D52DFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		CAD254011DAA728400D52DFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAD254031DAA728400D52DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAD254081DAA728400D52DFE /* ZENotationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZENotationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAD2540C1DAA728400D52DFE /* ZENotationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZENotationTests.swift; sourceTree = "<group>"; };
 		CAD2540E1DAA728400D52DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAD254181DAA779A00D52DFE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -111,8 +111,8 @@
 		CAD2540B1DAA728400D52DFE /* ZENotationTests */ = {
 			isa = PBXGroup;
 			children = (
-				CAD2540C1DAA728400D52DFE /* ZENotationTests.swift */,
 				CAD2540E1DAA728400D52DFE /* Info.plist */,
+				CA422BA41DAE872500D7E085 /* MKMapViewExtensionTests.swift */,
 			);
 			path = ZENotationTests;
 			sourceTree = "<group>";
@@ -247,7 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAD2540D1DAA728400D52DFE /* ZENotationTests.swift in Sources */,
+				CA422BA51DAE872500D7E085 /* MKMapViewExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

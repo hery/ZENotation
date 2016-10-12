@@ -5,7 +5,7 @@ A MapKit annotation aggregation framwork
 ## Why
 
 Displaying hundreds of annotations on a map yields low framerates.
-By aggregating annotations into clusters, we can display less annotation and get higher framerates without loss of information.
+By aggregating annotations into clusters, we can display less annotations and get higher framerates without loss of information.
 
 ## Usage
 

@@ -9,6 +9,10 @@
 import UIKit
 import MapKit
 
+/**
+ TODO: Start and finish UI work.
+ */
+
 enum ZENotationViewType {
     case Aggregated
     case Single

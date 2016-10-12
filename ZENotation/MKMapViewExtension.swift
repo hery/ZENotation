@@ -9,6 +9,12 @@
 import UIKit
 import MapKit
 
+/**
+ TODO: Finish aggregation algorithm.
+ Ideally we want to aggregate the annotations into as many annotations as we can
+ so that the UI remain responsive and readable, instead of into a single annotation.
+ */
+
 extension MKMapView {
     /**
      Collapse an array of annotations into an array containing a single annotations

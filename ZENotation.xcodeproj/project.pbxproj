@@ -65,14 +65,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CA3E04141DAC0706006AD312 /* framework */ = {
+		CA3E04141DAC0706006AD312 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
 				CA3E04151DAC0729006AD312 /* ZENotationView.swift */,
 				CA3E04171DAC0739006AD312 /* ZENotation.swift */,
 				CA422BA21DAE7E2500D7E085 /* MKMapViewExtension.swift */,
 			);
-			name = framework;
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		CA422BA61DAE92E600D7E085 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				CAD253F71DAA728400D52DFE /* AppDelegate.swift */,
+				CAD253F91DAA728400D52DFE /* ViewController.swift */,
+				CAD253FB1DAA728400D52DFE /* Main.storyboard */,
+				CAD253FE1DAA728400D52DFE /* Assets.xcassets */,
+				CAD254001DAA728400D52DFE /* LaunchScreen.storyboard */,
+			);
+			name = Example;
 			sourceTree = "<group>";
 		};
 		CAD253EB1DAA728400D52DFE = {
@@ -97,12 +109,8 @@
 		CAD253F61DAA728400D52DFE /* ZENotation */ = {
 			isa = PBXGroup;
 			children = (
-				CA3E04141DAC0706006AD312 /* framework */,
-				CAD253F71DAA728400D52DFE /* AppDelegate.swift */,
-				CAD253F91DAA728400D52DFE /* ViewController.swift */,
-				CAD253FB1DAA728400D52DFE /* Main.storyboard */,
-				CAD253FE1DAA728400D52DFE /* Assets.xcassets */,
-				CAD254001DAA728400D52DFE /* LaunchScreen.storyboard */,
+				CA422BA61DAE92E600D7E085 /* Example */,
+				CA3E04141DAC0706006AD312 /* Framework */,
 				CAD254031DAA728400D52DFE /* Info.plist */,
 			);
 			path = ZENotation;

@@ -1,6 +1,6 @@
 # ZENotation
 
-A MapKit annotation aggregation framwork
+A MapKit annotation aggregation framework
 
 ## Why
 
